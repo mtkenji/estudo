@@ -1,0 +1,518 @@
+:root {
+    --dark-ground: #1D232A;
+}
+
+@font-face {
+    font-family: 'icones';
+    src: url(../font/icones.ttf);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Nunito Sans', sans-serif;
+    background: rgb(215, 207, 207);
+    --background-image: url('img/background.jpg');
+    --background-size: 100%;
+    --background-repeat: no-repeat;
+    max-width: 100vw;
+}
+
+main {
+    max-width: 100vw;   
+}
+
+header {
+    width: 100%;
+    background-color: var(--dark-ground);
+    --position: fixed;
+}
+
+.cabecalho {
+    display: grid;
+    grid-template-columns: 90% 10%;
+    width: 100%;
+}
+
+.menu_navegacao {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.menu_navegacao_ul {
+    display: flex;
+}
+
+.menu_navegacao ul {
+    padding: 24px;
+}
+
+.menu_navegacao__sociais {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header_img__instagram {
+    width: 40px;
+    height: 40px;
+    align-content: center;
+}
+
+nav li{
+    display: inline;
+    color: white;
+    font-weight: 400;
+    padding: 12px;
+    font-size: 18px;
+}
+
+.menu_navegacao a:hover {
+    color: rgb(155, 130, 130);
+    transition: 0.3s;
+    font-weight: bold;
+}   
+
+
+.home {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-content:flex-end;
+    align-items: center;
+    height: 800px;
+    background-image: url('img/IMG_2044.jpg');
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.contato__atendimento {
+    height: 800px;
+    background-image: url('img/IMG_2044.jpg');
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.home h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    align-items: center;
+    justify-content: center;
+    margin-top: -100px;
+    --color: white;
+}
+
+.caixa {
+    background: rgba(255, 255, 255, .3);
+    position:absolute;
+    width: 40%;
+    height: 35%;
+    --margin-top: 200px;
+    border-radius: 15px;
+    margin-right: 1.5%;;
+}
+
+.caixa h1 {
+    color: black;
+    text-align: center;
+    margin : 1em 0;
+    font-weight:bolder;    
+}
+
+.caixa p, li {
+    color: black;
+    text-align: center;
+    font-size: 18px;
+    padding: 0 5%;
+    font-weight: 700;
+    padding-top: 0.5em;
+}
+
+.caixa2 h1 {
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 50px;
+    text-shadow: 1px 1px black ;
+    color: white;
+    text-align: center;
+}
+
+.caixa2 p {
+    --font-family: 'Fjalla One', sans-serif;
+    font-size: 30px;
+    text-shadow: 1px 1px black ;
+    color: white;
+    text-align: center;
+    padding-top: 20px;  
+}
+
+.belezas__div {
+    --height: 100%;
+}
+
+.belezas {
+    display: flex;
+    flex-direction:row;
+    flex-wrap:nowrap;
+    justify-content:space-evenly;
+    --grid-template-columns: auto auto;
+    height: 685px;
+    --box-sizing: border-box;
+}
+
+.beleza__noivas {
+    position: relative;
+    background-image: url(img/backgrounds/background-noivas-bw.jpg);
+    background-size: contain;
+    width: 100%;
+    --padding-top: 66.64%; /* (img-height / img-width * width) */
+                /* (853 / 1280 * 100) */
+}
+.beleza__social {
+    position: relative;
+    background-image: url(img/backgrounds/background-social-bw.jpg);
+    background-size: contain;
+    width: 100%;
+    --padding-top: 66.64%; /* (img-height / img-width * width) */
+                /* (853 / 1280 * 100) */
+}
+
+.beleza__noivas p,  .beleza__social p{
+    
+}
+
+
+.section_portifolio__link {
+    box-sizing: border-box;
+}
+
+.beleza__noivas, .beleza__social {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    text-transform: uppercase;
+}
+
+.beleza__noivas:hover {
+    background-image: url(img/backgrounds/background-noivas.jpg);
+    transition: 1s;
+}
+
+.beleza__social:hover {
+    background-image: url(img/backgrounds/background-social.jpg);
+    transition: 1s;
+}
+
+.beleza__noivas p, .beleza__social p {
+    font-size: 42px;
+    font-weight:bolder;
+    display: block;
+    background: rgba(255, 255, 255, .7);
+    padding: 12px;
+}
+
+
+
+/*ABOUT ME SECTION*/
+
+.about_me {
+    display: grid;
+    grid-template-columns: 25% 55% 20px;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0;
+    background: rgba(255, 255, 255, .5);
+}
+
+.about_me img {
+    align-self: center;
+    justify-self: right;
+    padding-right: 100px;
+    border-radius: 10px;
+}
+
+.about_me p {
+    line-height: 1.5em;
+    font-size: 18px;
+}
+
+/*PAGINA CONTATO*/
+.contato__atendimento {
+    --background: #FFFFFF;
+    --background: rgba(0, 0, 0, .3);
+    --background: rgb(215, 207, 207);
+    text-align: center; 
+    padding: 1em 0;
+    --margin: 1em 0;
+    display: flex;
+    --align-items: center;
+    justify-content: center;
+
+}
+
+.caixa_contato {
+    width: 50%;
+    height: 25%;
+    background: rgba(255, 255, 255, .3);
+    border-radius: 15px;
+    margin-right: 1.5%;
+    margin-top: 120px;
+    
+}
+
+.main_title__h3{
+    font-size: 34px;
+    padding: 1em 0;
+}
+
+
+
+.contato__atendimento p {
+    font-size: 20px;
+    padding: .5em 0;
+}
+
+.contato__descricao_email {
+    --padding-bottom: 2px;
+}
+
+.contato__descricao_email::before {
+    font-size: 24px;
+}
+
+
+footer {
+    background-color: #1D232A;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer__developer {
+    font-size: 12px;
+    margin-top: 12px;
+    color: #bfbfc0;
+}
+
+
+/*PAGINA BELEZA-NOIVAS*/
+
+.main_title__portifolio {
+    background: rgba(255, 255, 255, .7);
+}
+
+.main_title__portifolio_list {
+    font-size: 30px;
+    text-align: center;
+    font-weight: 700;
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.main_title__portifolio_list li {
+    padding: 15px;
+    text-transform: uppercase;
+    --position: relative;
+}
+
+
+.main_title__portifolio__item:hover{
+    cursor: pointer;
+    position: relative;
+}
+
+.photos-noivas, .photos-social {
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    --gap: 0.9px;
+    width: 100%;
+    height: 100%;
+}
+
+.noivas-img, .social-img {
+    border: 0.5px solid #1D232A;
+}
+
+.noivas-img:hover, .social-img:hover {
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+.main_title__portifolio__item::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #1D232A;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+  
+.main_title__portifolio__item::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+} 
+
+--#myImg:hover {opacity: 0.7;}
+
+/* The Modal (background) */
+.modal {
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+
+
+/* Add Animation */
+.modal-content, #caption {  
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+  from {-webkit-transform:scale(0)} 
+  to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+  from {transform:scale(0)} 
+  to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+  .modal-content {
+    width: 100%;
+  }
+}
+
+
+/* TESTE
+
+<p class="hover-underline-animation">Hover this text to see the effect!</p>
+
+.hover-underline-animation {
+    display: inline-block;
+    position: relative;
+    color: #0087ca;
+  }
+  
+  .hover-underline-animation::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #0087ca;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+  
+  .hover-underline-animation:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  } */
+
+
+  @media screen and (max-width: 500px){
+    .cabecalho {
+        display: flex;
+        justify-content: space-between;
+        padding: 15px;
+        box-sizing: border-box;
+    }
+    
+    .menu_navegacao_ul {
+        flex-direction: column;
+        position: absolute;
+        left: -100vw;
+        width: 40vw;
+        height: 100vh;
+        background-color: var(--dark-ground);
+        transition: 0.5;
+    }
+
+    .menu_navegacao_ul__ativo {
+        left: 0;
+        transition: 0.5;
+    }
+
+    .cabecalho__menu i::before {
+        content: "\e904";
+        font-size: 24px;
+        color: white;
+    }
+
+    .belezas, .beleza__noivas, .beleza__social {
+        display: block;
+        box-sizing: content-box;
+    }
+
+    .beleza__noivas, .beleza__social {
+        max-height: 180px;
+    }
+
+    .beleza__noivas p, .beleza__social p{
+        font-size: 1em;
+    }
+
+    .beleza__noivas {
+        background-image: url(img/backgrounds/background-noivas-mobile-bw.jpg);
+        text-align: right;
+    }
+
+    .beleza__social {
+        background-image: url(img/backgrounds/background-social-mobile-bw.jpg);
+        text-align: right;
+    }
+}

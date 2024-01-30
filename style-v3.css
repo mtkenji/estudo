@@ -1,0 +1,378 @@
+@font-face {
+    font-family: 'icones';
+    src: url(./assets/icones.ttf);
+}
+
+body {
+    font-family: 'Quicksand', sans-serif;
+}
+/* CABECALHO - INICIO */
+.cabecalho {
+    align-items: center;
+    background: #090909;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    --justify-items: center;
+}
+
+.cabecalho__lista {
+    padding-top: 1rem;
+}
+
+.cabecalho__lista li {
+    --font-family: 'Quicksand', sans-serif;
+    text-transform: uppercase;
+}
+
+.cabecalho__lista li a:hover {
+    color: palevioletred;
+    --font-size: 1.25rem;
+    font-weight: 700;
+    transition: 1.5s;
+}
+
+.cabecalho__instagram {
+    align-items: center;
+    display: flex;
+    margin-right: 1rem;
+}
+
+.cabecalho__logo {
+    display: none;
+}
+
+.cabecalho__lista {
+    display: none;
+}
+
+@media screen and (min-width: 0) {
+    
+    .cabecalho__lista--ativo {
+        display: flex;
+        flex-direction: column;
+        position: 0;
+    }
+    
+    .cabecalho__lista li {
+        font-size: 1.3rem;
+        padding-bottom: 1rem;
+        padding-left: 1.5rem;
+    }
+
+    .cabecalho__instagram {
+        display: none;
+    }
+
+    .cabecalho__button {
+        display: inline-block;
+        font-family: 'icones';
+        padding: 0.5rem ;
+    }
+    
+    .cabecalho__button i::before {
+        content: "\e904";
+        font-size: 40px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .cabecalho__logo {
+        display: block;
+    }
+
+    .cabecalho__lista, .cabecalho__lista--ativo {
+        align-content: center;
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+        position: relative;
+    }
+
+    .cabecalho__lista li {
+        font-size: 1.2rem;
+        margin: 0 1rem;
+    }
+
+    .cabecalho__instagram {
+        align-items: center;
+        display: flex;
+        margin-right: 1rem;
+        padding: 1rem 0;
+    }
+    .cabecalho__button {
+        display: none;
+    }
+}
+/* CABECALHO - FIM */
+
+/* SECTION - PRINCIPAL - INICIO */
+.section__principal {
+    background-image: url('img/IMG_2044.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    display: flex;
+    flex-direction: column;
+}
+
+.section__principal--titulo {
+    padding-top: 20%;
+    height: 60%;
+}
+
+.section__principal h1 {
+    color: white;
+    font-family: 'Fjalla One', sans-serif;
+    text-align: center;
+}
+
+.section__principal p {
+    font-size: 2rem;
+    text-shadow: 1px 1px black ;
+    color: white;
+    text-align: center;
+    padding-top: 1.5rem;  
+}
+
+@media screen and (min-width: 0) {
+    
+    .section__principal {
+        height: 500px;
+        max-height: 450px;
+    }
+
+    .section__principal h1 {
+        font-size: 2.3rem;
+        text-shadow: 0.5px 0.5px black ;
+    }
+
+    .section__principal p {
+        --font-family: 'Fjalla One', sans-serif;
+        font-size: 1.3rem;
+        text-shadow: 0.5px 0.5px black ;
+    }
+}
+
+@media screen and (min-width: 768px) {
+
+    .section__principal {
+        background-position: top center;
+        height: 800px;
+        max-height: 800px;
+    }
+
+    .section__principal h1 {
+        font-size: 4rem;
+        text-shadow: 1px 1px black ;
+    }
+
+    .section__principal p {
+        --font-family: 'Fjalla One', sans-serif;
+        font-size: 2rem;
+        text-shadow: 1px 1px black ;
+    }
+}
+
+/* SECTION - PRINCIPAL - FIM */
+
+
+
+
+/* SECTION PORTIFOLIO - INICIO */
+.container_portifolio {
+    display: block;
+}
+
+.section__portifolio {
+    display: flex;
+}
+
+.section__portifolio--noivas, .section__portifolio--social{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-size: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+}
+
+.section__portifolio--noivas p, .section__portifolio--social p {
+    background-color: rgba(999, 999, 999, 0.8);
+}
+
+@media screen and (min-width: 0) {
+    .section__portifolio {
+        flex-direction: column;
+        height: 400px;  
+    }
+    
+    .section__portifolio--social, .section__portifolio--noivas {
+        height: 275px;
+        max-height: 275px;
+        width: 100%;
+    }
+
+    .section__portifolio--noivas{
+        background-image: url('img/backgrounds/background-noivas-bw-mobile.jpg');
+        transition: 1.5s;
+    }
+    
+    .section__portifolio--noivas:hover{
+        background-image: url('img/backgrounds/background-noivas-mobile.jpg');
+        transition: 1.5s;
+    }
+
+    .section__portifolio--social {
+        background-image: url('img/backgrounds/background-social-bw-mobile.JPG');
+        transition: 1.5s;
+    }
+
+    .section__portifolio--social:hover {
+        background-image: url('img/backgrounds/background-social-mobile.JPG');
+        transition: 1.5s;
+    }
+
+    .section__portifolio--noivas p, .section__portifolio--social p {
+        font-size: 1.5rem;
+        padding: 0.3rem 0.5rem;
+    }
+}
+
+@media screen and (min-width: 768px){
+    .section__portifolio {
+        flex-direction: row;
+        height: 200px;
+        max-height: 200px;
+    }
+}
+
+
+@media screen and (min-width: 1124px) {
+    .section__portifolio {
+        flex-direction: row;
+        height: 450px;
+        max-height: 450px;
+    }
+    
+    .section__portifolio--social, .section__portifolio--noivas {
+        height: 450px;
+        max-height: 450px;
+        width: 100%;
+    }
+
+    .section__portifolio--noivas{
+        background-image: url('img/backgrounds/background-noivas-bw.jpg');
+        transition: 1.5s;
+    }
+    
+    .section__portifolio--social {
+        background-image: url('img/backgrounds/background-social-bw.JPG');
+        transition: 1.5s;
+    }
+
+    .section__portifolio--noivas:hover{
+        background-image: url('img/backgrounds/background-noivas.jpg');
+        transition: 1.5s;
+    }
+    
+    .section__portifolio--social:hover {
+        background-image: url('img/backgrounds/background-social.JPG');
+        transition: 1.5s;
+    }
+
+    .section__portifolio--noivas p, .section__portifolio--social p {
+        font-size: 3rem;
+        padding: 0.3rem 0.5rem;
+    }
+}
+
+/* SECTION PORTIFOLIO - fim */
+
+
+
+
+/* SECTION FOTOS - INICIO */
+
+.photos-noivas2, .photos-social2 {
+    cursor: pointer;
+    display: grid;
+    
+    width: 100%;
+    height: 100%;
+}
+
+@media screen and (min-width: 0) {
+    .photos-noivas2, .photos-social2 {
+        grid-template-columns: repeat(2, 50%);
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .photos-noivas2, .photos-social2 {
+        grid-template-columns: repeat(4, 25%);
+    }
+}
+
+/* SECTION FOTOS - FIM */
+
+
+
+
+/* SECTION CONTATO - INICIO */
+
+.section__contato {
+    background: black;
+    color: white;
+    display: block;
+    text-align: center;
+    width: 100%;
+}
+
+@media screen and (min-width: 0) {
+    .section__contato {       
+        height: 200px;
+    }
+
+    .section__contato h3 {
+        font-size: 1.5rem;
+        padding: 2rem 1.5rem;
+    }
+
+    .section__contato p {
+        font-size: 0.9rem;
+        padding: 0.8rem;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .section__contato {
+        height: 200px;
+    }
+
+    .section__contato h3 {
+        font-size: 2rem;
+        padding: 2rem 1.5rem 0;
+    }
+
+    .section__contato p {
+        font-size: 1rem;
+        padding-top: 1.5rem;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .section__contato {
+        margin-top: 50px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .section__contato {
+        margin-top: 0;
+    }
+}
+
+/* SECTION CONTATO - FIM */
